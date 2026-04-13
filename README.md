@@ -1,22 +1,21 @@
-# 🔍 Search Engine (Final Project)
+# 🔍 Поисковая система (Search Engine)
 
-Console-based search engine that indexes local text files and provides relevant search results based on user queries.
+Консольное приложение для быстрого поиска и индексации текстовых документов.
 
-## 🚀 Key Features
-*   **Fast Indexing**: Inverted index logic for instant lookups.
-*   **Multithreading**: Uses `std::thread` and `std::mutex` for safe, parallel document processing.
-*   **JSON Support**: Configuration and queries are handled via `nlohmann/json`.
-*   **Relevance Ranking**: Results are sorted using absolute and relative relevance formulas.
-*   **Unit Testing**: Covered with **Qt Test** framework.
+## 🚀 Ключевые особенности
+*   **Высокая производительность**: Использование инвертированного индекса для мгновенного поиска.
+*   **Многопоточность**: Параллельная обработка документов с использованием `std::thread` и защита данных через `std::mutex`.
+*   **Кроссплатформенность**: Полный отказ от сторонних фреймворков (Qt) в пользу стандартной библиотеки C++ (STL).
+*   **Работа с данными**: Обработка конфигурации и запросов в формате JSON (библиотека `nlohmann/json`).
+*   **Ранжирование**: Сортировка результатов по формулам абсолютной и относительной релевантности.
 
-## 🛠 Tech Stack
-*   **Language**: C++17
-*   **Framework**: Qt 6 (Core, Test)
-*   **Build System**: CMake
-*   **Format**: JSON
+## 🛠 Технологический стек
+*   **Язык**: C++17
+*   **Библиотеки**: nlohmann/json, Google Test (GTest)
+*   **Система сборки**: CMake (автоматическое скачивание зависимостей через FetchContent)
 
-## 🧪 How to run tests
-1. Open the project in Qt Creator.
-2. Select the `SearchEngineTest` target.
-3. Run the application to see the "Totals: 4 passed" report.
-
+## 🧪 Модульное тестирование
+Проект покрыт модульными тестами с использованием **Google Test**.
+Для запуска тестов:
+1. Перейдите в папку `build`.
+2. Запустите исполняемый файл: `./test/SearchEngineTest`
