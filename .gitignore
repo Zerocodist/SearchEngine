@@ -39,3 +39,19 @@
 
 # debug information files
 *.dwo
+
+# Qt Creator и специфичные файлы сборки
+build/
+*.user
+.qtcreator/
+CMakeLists.txt.user*
+
+# Файлы операционной системы Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Временные файлы редакторов
+*.swp
+*~
+.vscode/
